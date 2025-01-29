@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js vjezba</title>
+</head>
+<body>
+
+    <h1>JS vjezba</h1>
+
+    <button id="button_A">POVECAJ ME</button>
+    <button id="button_B"> SMANJI ME</button>
+    <h3 id="heading_A"></h3>
+
+    
+
+
+    <script>
+
+        const buttanA = document.querySelector("#button_A")
+        const buttanB =document.querySelector("#button_B")
+        
+        const headingA = document.querySelector("#heading_A")
+        
+        let count = 1;
+
+        buttanA.onclick = () => {
+            headingA.textContent = `Broj klikova: ${count} `;
+            count +=1
+        };
+
+       
+       
+        buttanB.onclick = () => {
+            headingA.textContent = `Broj klikova: ${count-2} `;
+            count -=1
+        };
+        
+    </script>
+
+
+
+</body>
+</html>

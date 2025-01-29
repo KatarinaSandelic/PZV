@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js polja</title>
+</head>
+<body>
+    
+<h1>Polje JS</h1>
+
+<script>
+
+let auti= new Array("Miata", "Audi", "BMW", "Smart");
+
+document.write(auti[0] + "<br/>");
+document.write(auti[1] + "<br/>");
+document.write(auti[2] + "<br/>");
+document.write(auti[3] + "<br/>");
+
+
+const voce = ["banana", "jabuka", "jagoda", "mango"];
+
+document.write(voce.length + "<br/>");
+
+document.write(voce.join(" - "));
+
+document.write("</br>")
+const hrana = ["pizza", "tortilja", "jagoda", "piletina", "mlinci", "salata"];
+
+hrana.sort();
+document.write(hrana);
+
+document.write("</br>")
+
+hrana.reverse();
+document.write(hrana);
+
+</script>
+
+<p id="demo"></p>
+
+<script>
+const brojevi = ["10", "20", "30", "40", "50"];
+let txt ="";
+
+brojevi.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array){
+    txt +=value +"<br>";
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
